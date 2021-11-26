@@ -2,6 +2,7 @@ const mysql = require('mysql2');
 const inquirer = require('inquirer');
 
 // need to import departments, roles and employee files
+const roles = require('./lib/roles');
 
 const questions = () => inquirer 
   .prompt([
@@ -16,6 +17,7 @@ const questions = () => inquirer
   
   if (questions.choices === 'View all departments') {
     // console.table(deparments)
+    roles.viewRole();
   };
 
   if (questions.choices === 'View all roles') {
