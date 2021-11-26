@@ -1,5 +1,5 @@
 const mysql = require('mysql2');
-const inquirer = require('inquirer');
+require('dotenv').config();
 
 const db = mysql.createConnection(
     {
@@ -10,3 +10,5 @@ const db = mysql.createConnection(
     },
     console.log(`Connected to the database.`)
   );
+
+module.exports = db
