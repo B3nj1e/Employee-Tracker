@@ -13,8 +13,7 @@ const questions = () => inquirer
     }
   ])
 
-  questions()
-
+  
   if (questions.choices === 'View all departments') {
     // console.table(deparments)
   };
@@ -36,5 +35,7 @@ const questions = () => inquirer
   }
 
   if (questions.choices === 'Add an employee') {
-    
-  }
+
+}
+
+questions()
