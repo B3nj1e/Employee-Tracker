@@ -10,18 +10,17 @@ const questions = async () => { await inquirer
       type: "list",
       name: "initial", 
       message: "Please select the option you would like to perform",
-      choices: ['View all departments', 'View all roles', 'View all employees', 'Add a department', 'Add a role', 'Add an employee', 'Update an employee role'],
+      choices: ['View all departments', 'View all roles', 'View all employees', 'Add a department', 'Add a role', 'Add an employee', 'Update an employee role', 'Quit'],
     }
   ]).then((data) => {
     console.log(data)
   
   if (data.initial === 'View all departments') {
-    // console.table(deparments)
-    
+    console.log("View department");
   }
 
   else if (data.initial === 'View all roles') {
-    console.log("hello");
+    console.log("View roles");
     roles.viewRole();
   }
 
@@ -39,8 +38,13 @@ const questions = async () => { await inquirer
 
   else if (data.initial === 'Add an employee') {
 
-}}).catch((error) => {
+  } else if (data.initial === 'Quit') {
+  return
+  }
+}).catch((error) => {
   console.log(error)
   })};
 
-questions()
+questions();
+
+module.exports = { questions }

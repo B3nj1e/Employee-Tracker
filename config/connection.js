@@ -1,7 +1,7 @@
 const mysql = require('mysql2');
 require('dotenv').config();
 
-function connection() {
+function conn() {
     return mysql.createConnection(
     {
       host: 'localhost',
@@ -13,4 +13,4 @@ function connection() {
   );
 };
 
-module.exports = { connection }
+module.exports = { conn }
