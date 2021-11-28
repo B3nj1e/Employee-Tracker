@@ -13,7 +13,7 @@
 
 ## GitHub
 My GitHub username is B3nj1e. 
-Please click [here](https://github.com/B3nj1e) to access my GitHub profile and the associated repository [here](https://github.com/B3nj1e/Note-Taker).
+Please click [here](https://github.com/B3nj1e) to access my GitHub profile and the associated repository [here](https://github.com/B3nj1e/Employee-Tracker).
 
 ## Description
 An employee manager system to create a store data relating to company departments, employment roles and employee data. This information is store on a database using MySQL and SQL. 
@@ -48,7 +48,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 
 ## Installation Instructions
-To use the application, please download all associated files off the [GitHub repository](https://github.com/B3nj1e/Note-Taker). Ensure node.js is installed. In the terminal run ``npm i`` to install the dependencies, including inquirer, dotenv, mysql2 and console.table. Before proceeding to run the application, ensure to update your user data in the ``.env.EXAMPLE`` file and then rename the file ``.env``. Once these steps have been carried out, in the terminal type ``node index.js``. This should initiate user prompts in the terminal. There are options to view data in the terminal, or create new date to submit to the database.  
+To use the application, please download all associated files off the [GitHub repository](https://github.com/B3nj1e/Employee-Tracker). Ensure node.js is installed. In the terminal run ``npm i`` to install the dependencies, including inquirer, dotenv, mysql2 and console.table. Before proceeding to run the application, ensure to update your user data in the ``.env.EXAMPLE`` file and then rename the file ``.env``. Once these steps have been carried out, in the terminal type ``node index.js``. This should initiate user prompts in the terminal. There are options to view data in the terminal, or create new date to submit to the database.  
 
 ## Usage Instructions
 Please click [here](https://drive.google.com/file/d/1UHRjn0ONW8JBoi3t79UhrVfK-d-u7zh0/view) to view a video tutorial on how to use this application. 
