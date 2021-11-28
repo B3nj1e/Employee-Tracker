@@ -3,6 +3,8 @@ const inquirer = require('inquirer');
 
 // need to import departments, roles and employee files
 const roles = require('./lib/roles');
+const departments = require('./lib/departments');
+const employees = require('./lib/employees');
 
 const questions = async () => { await inquirer 
   .prompt([
@@ -17,15 +19,21 @@ const questions = async () => { await inquirer
   
   if (data.initial === 'View all departments') {
     console.log("View department");
+    departments.viewDepartment();
+    questions();
+
   }
 
   else if (data.initial === 'View all roles') {
     console.log("View roles");
     roles.viewRole();
+    questions();
   }
 
   else if (data.initial === 'View all employees') {
-
+    console.log("view employees");
+    employees.viewEmployees();
+    questions();
   }
 
   else if (data.initial === 'Add a department') {
