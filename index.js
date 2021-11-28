@@ -37,16 +37,33 @@ const questions = async () => { await inquirer
   }
 
   else if (data.initial === 'Add a department') {
-
+    const order = async () => {
+    console.log("add department");
+    await departments.addDepartment();
+    await questions();
+    }
+    order();
   }
 
   else if (data.initial === 'Add a role') {
-
+    const order = async () => {
+      console.log("add role");
+      await roles.addRole();
+      await questions();
+      }
+      order();
   }
 
   else if (data.initial === 'Add an employee') {
-
-  } else if (data.initial === 'Quit') {
+    const order = async () => {
+      console.log("add employee");
+      await employees.addEmployee();
+      await questions();
+      }
+      order();
+  } 
+  
+  else if (data.initial === 'Quit') {
   return
   }
 }).catch((error) => {
