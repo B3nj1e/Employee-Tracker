@@ -51,7 +51,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 To use the application, please download all associated files off the [GitHub repository](https://github.com/B3nj1e/Note-Taker). Ensure node.js is installed. In the terminal run ``npm i`` to install the dependencies, including inquirer, dotenv, mysql2 and console.table. Before proceeding to run the application, ensure to update your user data in the ``.env.EXAMPLE`` file and then rename the file ``.env``. Once these steps have been carried out, in the terminal type ``node index.js``. This should initiate user prompts in the terminal. There are options to view data in the terminal, or create new date to submit to the database.  
 
 ## Usage Instructions
-Please click [here]() to view a video tutorial on how to use this application. 
+Please click [here](https://drive.google.com/file/d/1UHRjn0ONW8JBoi3t79UhrVfK-d-u7zh0/view) to view a video tutorial on how to use this application. 
 
 ## Contribution Guidelines
 If you think you can improve this application, please feel free to make contributions. I will review these changes on GitHub prior to merging them to the main branch.
